@@ -16,3 +16,7 @@ libexec: [
 bin: [
   "_build/install/default/bin/tunein_cli"
 ]
+doc: [
+  "_build/install/default/doc/tunein_cli/LICENSE"
+  "_build/install/default/doc/tunein_cli/README.md"
+]

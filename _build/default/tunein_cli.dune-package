@@ -1,6 +1,6 @@
 (lang dune 3.16)
 (name tunein_cli)
-(sections (lib .) (libexec .) (bin ../../bin))
+(sections (lib .) (libexec .) (bin ../../bin) (doc ../../doc/tunein_cli))
 (files
  (lib
   (META
@@ -14,7 +14,8 @@
    tunein_cli.cmxa
    tunein_cli.ml))
  (libexec (tunein_cli.cmxs))
- (bin (tunein_cli)))
+ (bin (tunein_cli))
+ (doc (LICENSE README.md)))
 (library
  (name tunein_cli)
  (kind normal)

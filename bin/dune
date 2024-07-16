@@ -1,5 +1,5 @@
 (executable
  (public_name tunein_cli)
- (name main)
+ (name tunein_cli)
  (libraries tunein_cli cohttp-lwt-unix xmlm lwt))
  
