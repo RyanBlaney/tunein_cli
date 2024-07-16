@@ -1,0 +1,6 @@
+description = ""
+requires = "cohttp-lwt-unix lwt xmlm"
+archive(byte) = "tunein_cli.cma"
+archive(native) = "tunein_cli.cmxa"
+plugin(byte) = "tunein_cli.cma"
+plugin(native) = "tunein_cli.cmxs"

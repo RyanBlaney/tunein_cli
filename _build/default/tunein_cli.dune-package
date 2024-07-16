@@ -1,0 +1,36 @@
+(lang dune 3.16)
+(name tunein_cli)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   tunein_cli.a
+   tunein_cli.cma
+   tunein_cli.cmi
+   tunein_cli.cmt
+   tunein_cli.cmx
+   tunein_cli.cmxa
+   tunein_cli.ml))
+ (libexec (tunein_cli.cmxs))
+ (bin (tunein_cli)))
+(library
+ (name tunein_cli)
+ (kind normal)
+ (archives (byte tunein_cli.cma) (native tunein_cli.cmxa))
+ (plugins (byte tunein_cli.cma) (native tunein_cli.cmxs))
+ (native_archives tunein_cli.a)
+ (requires cohttp-lwt-unix xmlm lwt)
+ (main_module_name Tunein_cli)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name tunein_cli)
+     (visibility public)
+     (kind alias)
+     (source (path Tunein_cli) (impl (path tunein_cli.ml-gen))))
+    (name Tunein_cli))
+   (wrapped true))))

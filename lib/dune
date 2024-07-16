@@ -1,0 +1,4 @@
+(library
+ (name tunein_cli)
+ (public_name tunein_cli)
+ (libraries cohttp-lwt-unix xmlm lwt))

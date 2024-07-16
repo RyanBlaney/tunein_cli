@@ -1,0 +1,18 @@
+lib: [
+  "_build/install/default/lib/tunein_cli/META"
+  "_build/install/default/lib/tunein_cli/dune-package"
+  "_build/install/default/lib/tunein_cli/opam"
+  "_build/install/default/lib/tunein_cli/tunein_cli.a"
+  "_build/install/default/lib/tunein_cli/tunein_cli.cma"
+  "_build/install/default/lib/tunein_cli/tunein_cli.cmi"
+  "_build/install/default/lib/tunein_cli/tunein_cli.cmt"
+  "_build/install/default/lib/tunein_cli/tunein_cli.cmx"
+  "_build/install/default/lib/tunein_cli/tunein_cli.cmxa"
+  "_build/install/default/lib/tunein_cli/tunein_cli.ml"
+]
+libexec: [
+  "_build/install/default/lib/tunein_cli/tunein_cli.cmxs"
+]
+bin: [
+  "_build/install/default/bin/tunein_cli"
+]
